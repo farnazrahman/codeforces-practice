@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main(){
+    
+        int t;
+        scanf("%d",&t);
+        while(t--){
+            char s1[4];
+            char s2[4];
+            scanf("%s %s",s1,s2);
+            char temp = s1[0];
+             s1[0]= s2[0];
+             s2[0]= temp;
+             printf("%s %s\n",s1,s2);
+        }
+    return 0;
+}
