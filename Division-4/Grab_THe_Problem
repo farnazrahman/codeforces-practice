@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main(){
+    int t;
+    scanf("%d",&t);
+    while(t--){
+        int n;
+        scanf("%d",&n);
+        int count = 0;
+        int arr[n];
+        for(int i=0;i<n;i++){
+            scanf("%d",&arr[i]);
+        }int mihai = 0;
+        int bianca = 0;
+        for(int i=0;i<n;i++){
+            if(arr[i]%2 != 0){
+                bianca = bianca + arr[i];
+            }else{
+                mihai = mihai + arr[i];
+            }
+        }if(mihai>bianca){
+            count = 1;
+        }
+    if(count){printf("YES\n");}
+else{
+    printf("NO\n");
+}
+    }
+    return 0;
+}
