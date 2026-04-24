@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main(){
+      int a,b,c;
+      scanf("%d",&a);
+      scanf("%d",&b);
+      scanf("%d",&c);
+    int  ex1 = (a+b)*c;
+    int ex2 = a + b*c;
+    int ex3 = a*b*c;
+    int ex4 = a*(b+c);
+    int ex5 = a*b+c;
+    int ex6 = a+b+c;
+    
+    int max = ex1;
+    if(ex2>max){max=ex2;}
+    if(ex3>max){max=ex3;}
+    if(ex4>max){max=ex4;}
+    if(ex5>max){max=ex5;}
+    if(ex6>max){max=ex6;}
+    printf("%d",max);
+        return 0;
+}
