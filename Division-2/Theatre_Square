@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+    long long  n,m,a;
+    scanf("%lld %lld %lld",&n,&m,&a);
+    long long tiles_width;
+    tiles_width = (n+a-1)/a;
+    long long tiles_height;
+    tiles_height = (m+a-1)/a;
+
+    printf("%lld",tiles_width*tiles_height);
+    return 0;
+
+
+}
