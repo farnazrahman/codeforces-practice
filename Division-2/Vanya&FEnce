@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(){
+    int n,h;
+    scanf("%d %d",&n,&h);
+    int num[n];
+    for(int i=0;i<n;i++)
+    scanf("%d",&num[i]);
+    int x=0;
+    for(int i=0;i<n;i++){
+        if(num[i]<=h){
+            x++;
+        }else if(num[i]>h){
+            x=x+2;
+        }
+    }printf("%d",x);
+    return 0;
+}
