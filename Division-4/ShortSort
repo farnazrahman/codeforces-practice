@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main(){
+  int t;
+  scanf("%d",&t);
+  while(t--){
+    char x,y,z;
+    scanf(" %c %c %c",&x,&y,&z);
+    if((x=='a'&& y=='b'&& z=='c')||
+       (x=='b'&& y=='a'&& z=='c')||
+    (x=='c'&& y=='b'&& z=='a')||
+    (x=='a'&& y=='c'&& z=='b')){
+        printf("YES\n");
+    }else{
+        printf("NO\n");
+    }
+  }
+    
+    return 0;
+}
