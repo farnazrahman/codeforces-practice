@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main(){
+    
+        int t;
+        scanf("%d",&t);
+        while(t--){
+           int n;
+           scanf("%d",&n);
+           int y,r;
+           scanf("%d %d",&y,&r);
+           int x = y/2;
+           int ans = r+x;
+           if(ans>n){
+            ans = n;
+           }
+           printf("%d\n",ans);
+           
+        }
+           
+        
+    return 0;
+}
