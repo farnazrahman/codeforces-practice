@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+    int n; //total amount
+    scanf("%d",&n);
+    //x,y,z,m,p are the bills of 1,5,10,20,100 
+    int x= n/100;
+    int y = (n%100)/20;
+    int z = (n%20)/10;
+    int m = (n%10)/5;
+    int p = (n%5);
+    printf("%d",x+y+z+m+p);
+    return 0;
+}
