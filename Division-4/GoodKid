@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main(){
+  int t;
+  scanf("%d",&t);
+  while(t--){
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }int min=arr[0];
+    for(int i=0;i<n;i++){
+        if(arr[i]<min){
+            min = arr[i];
+        }
+    }int product=1;
+    for(int i=0;i<n;i++){ if(arr[i]==min){
+            arr[i]=arr[i]+1;
+            break;
+        }
+    }
+            for(int i=0;i<n;i++){
+        product = product*arr[i];}
+    printf("%d\n",product);
+  
+  }
+    return 0;
+}
