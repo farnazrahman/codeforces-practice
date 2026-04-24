@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    int t;//number of tests
+    scanf("%d",&t);
+    int count=0;
+    while(t--){
+        int x,y,z;// 0 or 1 
+        scanf("%d %d %d",&x,&y,&z);
+        if(x+y+z >= 2){
+            count++;
+        }
+        
+    }printf("%d\n",count);
+    return 0;
+
+}
