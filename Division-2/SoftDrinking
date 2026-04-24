@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    int n,k,l,c,d,p,nl,np;
+    scanf("%d %d %d %d %d %d %d %d",&n,&k,&l,&c,&d,&p,&nl,&np);
+    int a = (k*l)/(n*nl);
+    int b = (c*d)/n;
+    int x = p/(n*np);
+    if(a<b && a<x){
+        printf("%d",a);
+    }else if(b<a && b<x){
+        printf("%d",b);
+    }else {printf("%d",x);}
+    
+    
+    return 0;
+}
