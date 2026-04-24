@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int t;//test cases
+    scanf("%d",&t);
+    
+    while(t--){
+        int l,r,d,u;
+        scanf("%d %d %d %d",&l,&r,&d,&u);
+        if(l==r && r==d && d==u){
+            printf("YES\n");
+        }else{
+            printf("NO\n");
+        }
+    }return 0;
+}
