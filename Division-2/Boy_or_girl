@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<ctype.h>
+int main(){
+    char c;
+    int arr[26]={0};
+    int count=0;
+    while((c=getchar())!='\n'){
+        if(isalpha(c)){
+         c= toupper(c);
+         c= c-'A';
+         arr[c]++;
+        }
+    }
+         for(int i=0;i<26;i++){
+            if(arr[i]!=0){
+                count++;
+            }
+         }
+         if(count%2==0){
+            printf("CHAT WITH HER!");
+         }
+         else{
+            printf("IGNORE HIM!");
+        }
+}

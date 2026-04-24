@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main(){
+    
+    int count=0;
+    int n;
+    while((n=getchar())!='\n'){
+        if(n-'0'==4){
+            count++;
+        }
+        else if(n-'0'==7){
+            count++;
+        }
+    } 
+    int flag=1;
+    if(count==0){
+        flag=0;
+    }
+    int x;
+    while(count!=0){
+         x=count%10;
+         if(x!=4 && x!=7){
+            flag=0;
+            break;
+         }
+         count=count/10;
+    }
+    if(flag){
+        printf("YES");
+    }else{
+        printf("NO");
+    }
+return 0;
+}

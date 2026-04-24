@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+    char c;
+    int temp=1;
+    while((c=getchar())!='\n'){
+        if(c=='H'||c=='Q'||c=='9'){
+            printf("YES");
+            temp=0;
+            break;
+        }
+    }if(temp){
+            printf("NO");
+        } 
+return 0;
+}

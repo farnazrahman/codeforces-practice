@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+    char arr[105];
+    scanf("%s",arr);
+    char arr2[105];
+    scanf("%s",arr2);
+    int count=0;
+    int s= strlen(arr);
+     int t= strlen(arr2);
+     if(s!=t){
+        printf("NO");
+     }
+    else{
+    int temp=1;
+    for(int i=0;i<s;i++){
+    
+        if(arr[i]!=arr2[s-i-1]){
+            temp=0;
+            break;
+        }
+    }
+    if(temp){
+        printf("YES");
+    }else{
+        printf("NO");
+    }
+}
+return 0;
+}

@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+
+    for(int i=n+1;i<9876;i++){
+        int x=i%10;
+        int y=(i/10)%10;
+        int z=(i/100)%10;
+        int m=(i/1000);
+       if(x !=y && x!=z && x!= m && y!=z && y!=m && m!=z){
+        printf("%d",i);
+        break;
+       }
+
+    }
+    return 0;
+}
